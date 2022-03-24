@@ -80,6 +80,7 @@ body {
 .content_main_user_rectangle {
   position: absolute;
   align-items: center;
+  flex-direction: column;
   width: 420px;
   height: 58px;
   border: 1px solid #e5e5e5;
@@ -88,28 +89,31 @@ body {
 
   margin: 0 auto;
 
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .material-icons {
   position: absolute;
+
   width: 24px;
   height: 24px;
+  margin-top: 15px;
   margin-left: 5px;
   color: #e5e5e5;
 }
 
 .content_main_user_txt {
-  width: 417px;
+  width: 410px;
   height: 56px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   border: none;
+  background: none;
   outline: none;
   box-sizing: border-box;
   border-radius: 4px;
-  margin: 0;
+  margin-left: 45px;
 }
 
 .content_main_btn {
@@ -152,5 +156,15 @@ body {
 .content_sec_img {
   width: 626.67px;
   height: 500px;
-  margin: 148px 85.33px 302px 86px;
+  margin: 148px 85.33px 88px 86px;
+}
+
+.content_main_tit_2 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0px 88px 114px 88px;
+  color: #ffffff;
 }
