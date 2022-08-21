@@ -1,11 +1,9 @@
 .users {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-around;
   font-size: 100%;
   background-color: #f8f8f8;
-  display: grid;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -53,7 +51,7 @@
 .users_content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:flex-start;
 
   margin-top: 10vh;
 }
@@ -69,12 +67,15 @@
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .users_content {
   padding-top: 102px;
+  
 }
 
 .users_content_profiles {
-  position: relative;
-  align-items: center;
+  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  align-items: flex-start;
   width: 1298px;
   height: 144px;
   top: 112px;
@@ -91,18 +92,78 @@
 }
 
 .users_content_profiles_avatar {
+  background-blend-mode: normal;
+  width: 80px;
+  height: 80px;
   position: relative;
-  align-items: center;
-  width: 5rem;
-  padding: 30px;
+  align-items: left;
   clip-path: circle(50% at 50% 50%);
 }
 
-.users_content_profiles_usernames {
+.users_content_profiles_info {
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  width: 1208px;
+  height: 144px;
+}
+.users_content_profiles_info > h1{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #000000;
+}
+.users_content_profiles_info > a {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  
+  
+  color: #000000;
+}
+
+.company_location{
+  display: flex;
+  flex-direction: row;
+
+  width: 262px;
+  height: 16px;
+  left: 94px;
+  top: 224px;
+
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  
+  
+  color: #7E7E7E;
+}
+
+
+.users_content_profiles_info_arrow {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  left: 389px;
+  top: 137px;
+
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
 }
 
 .users_content_profiles_avatar span {
-  position: absolute;
+  position: relative;
 
   z-index: 1;
 }

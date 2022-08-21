@@ -66,7 +66,7 @@ body {
 }
 
 .content_main_user {
-  display: flex;
+  display: relative;
   flex-direction: row;
   align-items: center;
   width: 420px;
@@ -78,7 +78,7 @@ body {
 }
 
 .content_main_user_rectangle {
-  position: absolute;
+  position: relative;
   align-items: center;
   flex-direction: column;
   width: 420px;
@@ -93,7 +93,7 @@ body {
 }
 
 .material-icons {
-  position: absolute;
+  position: relative;
 
   width: 24px;
   height: 24px;

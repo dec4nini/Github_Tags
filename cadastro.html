@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <!-- <meta name="viewport" content="width-device-width, initial-scale=1.0" /> -->
     <title>Cadastro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,44 +21,44 @@
   <body>
     <main>
       <div class="content">
-        <div class="content_main">
-          <img
-            class="content_main_img"
-            src="images/logoGithub.svg"
-            alt="logo do github"
-          />
-          <h1 class="content_main_tit">Buscar Usuário</h1>
-          <h2 class="content_main_sub">
-            Crie sua conta através do seu usuário do Github
-          </h2>
-          <div class="content_main_user">
-            <div class="content_main_user_rectangle">
-              <i class="material-icons">account_circle</i>
-              <input
-                class="content_main_user_txt"
-                type="text"
-                name="firstname"
-                placeholder="@username"
-              />
+        <section class="content_main">
+          <form method="get" action="./usuarios.html">
+            <img
+              class="content_main_img"
+              src="images/logoGithub.svg"
+              alt="logo do github"
+            />
+            <h1 class="content_main_tit">Buscar Usuário</h1>
+            <h2 class="content_main_sub">
+              Crie sua conta através do seu usuário do Github
+            </h2>
+            <div class="content_main_user">
+              <div class="content_main_user_rectangle">
+                <i class="material-icons">account_circle</i>
+                <input
+                  class="content_main_user_txt"
+                  type="text"
+                  name="firstname"
+                  placeholder="@username"
+                />
+              </div>
             </div>
-          </div>
-          <form action="usuarios.html">
             <button class="content_main_btn">Cadastrar</button>
-          </form>
 
-          <div class="footer_cstm">
-            <a>Termos de política e privacidade</a>
-          </div>
-        </div>
+            <footer class="footer_cstm">
+              <a>Termos de política e privacidade</a>
+            </footer>
+          </form>
+        </section>
       </div>
 
-      <div class="content_sec">
+      <section class="content_sec">
         <img class="content_sec_img" src="images/backgroundimg.svg" />
         <p class="content_sec_lbl"></p>
         <p class="content_main_tit_2">
           Gerencie e adicione tags aos seus repositórios favoritos
         </p>
-      </div>
+      </section>
     </main>
   </body>
 </html>
