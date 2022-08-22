@@ -35,6 +35,12 @@ function get_GitHub_Profil_Info() {
       user_company.textContent = data.company
       user_location.textContent = data.location
     })
+  const url_stars = `https://api.github-star-counter.workers.dev/user/${links_social_media.github}`
+  fetch(url_stars)
+    .then(response => response.json())
+    .then(data => {
+      user_stars.textContent = data.stars
+    })
 }
 
 get_GitHub_Profil_Info()
