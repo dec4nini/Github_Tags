@@ -1,3 +1,17 @@
+.material-icons.md-16 { font-size: 16px; padding:10px 0 0 10px;color: #E5E5E5;}
+.material-icons.md-24 { font-size: 24px; margin: 4px;}
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
 .users {
   display: flex;
   flex-direction: row;
@@ -75,7 +89,6 @@
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
-  align-items: flex-start;
   width: 1298px;
   height: 144px;
   top: 112px;
@@ -83,7 +96,7 @@
   background-color: #ffffff;
 
   border: 1px solid #e5e5e5;
-  box-sizing: border-box;
+  box-sizing:border-box;
   border-radius: 4px;
 
   border-radius: 20px;
@@ -97,16 +110,27 @@
   height: 80px;
   position: relative;
   align-items: left;
+  margin: 15px 0 0 35px;
   clip-path: circle(50% at 50% 50%);
 }
 
 .users_content_profiles_info {
   display: flex;
   flex-direction: column;
-  position:relative;
+  position:absolute;
+  padding-left: 10%;
   width: 1208px;
   height: 144px;
+  padding-top: 10px;
 }
+
+.username_container{
+  margin-bottom: -20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .users_content_profiles_info > h1{
   font-family: 'Mulish';
   font-style: normal;
@@ -122,20 +146,19 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  
   /* identical to box height */
   
   
   color: #000000;
 }
 
-.company_location{
+.company_location_star{
   display: flex;
   flex-direction: row;
 
-  width: 262px;
+  width: 562px;
   height: 16px;
-  left: 94px;
-  top: 224px;
 
   font-family: 'Mulish';
   font-style: normal;
@@ -143,9 +166,11 @@
   font-size: 12px;
   line-height: 15px;
   
+  margin: 10px 0 0 35px;
   
   color: #7E7E7E;
 }
+
 
 
 .users_content_profiles_info_arrow {
@@ -160,6 +185,17 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 32px;
+}
+
+.delete_user_btn{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 1240px;
+  margin: 20px 45px 0 0;
+  
+  background: #E8E8E8;
+  border-radius: 50%;
 }
 
 .users_content_profiles_avatar span {

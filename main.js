@@ -31,7 +31,7 @@ function get_GitHub_Profil_Info() {
       user_name.textContent = data.name
       user_link.href = data.html_url
       user_avatar.src = data.avatar_url
-      user_login.textContent = data.login
+      user_login.textContent = '@' + data.login
       user_company.textContent = data.company
       user_location.textContent = data.location
     })

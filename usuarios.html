@@ -18,6 +18,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body class="users">
     <div class="sticky_header" id="header">
@@ -33,7 +37,10 @@
           alt="Foto Pessoal" />
         </div>
         <div class="users_content_profiles_info">
-          <h1 id="user_name">Abdeer</h1>
+          <div class="username_container">
+            <h1 id="user_name">Abdeer</h1>
+            <i class="material-icons md-36">keyboard_arrow_right</i>
+          </div>
           <a
             id="user_link"
             href="https://www.github.com/dec4nini/"
@@ -41,20 +48,26 @@
           >
             <img src="images/github.svg" alt="" /><span id="user_login"></span>
           </a>
-          <div class="company_location">
-            <p id="user_company">
-              Um programador focado e apaixonado pelo que faz.
-            </p>
-            <p id="user_location">Localização</p>
-          </div>
+        </div>
+        <div class="company_location_star">
+          <i class="material-icons md-16">business</i>
+          <p id="user_company">
+            Um programador focado e apaixonado pelo que faz.
+          </p>
+          <i class="material-icons md-16">place</i>
+          <p id="user_location">Localização</p>
+          <i class="material-icons md-16">star</i>
+          <p id="user_stars">0</p>
+        </div>
+        <div class="delete_user_btn">
+          <a
+            class="material-icons md-24"
+            href="https://www.github.com/dec4nini/"
+            target="_blank"
+            >delete</a
+          >
         </div>
       </div>
-
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex ratione
-        aliquid magnam quae, iusto quidem esse? Ab libero ipsa aut? Sequi iure
-        eligendi perspiciatis numquam ab voluptates qui, minima ea.
-      </p>
     </div>
   </body>
   <script src="main.js"></script>
