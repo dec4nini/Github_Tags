@@ -26,7 +26,7 @@
   <body class="users">
     <div class="sticky_header" id="header">
       <img class="logo" src="images/logoGithub.svg" />
-      <button class="users_header_btn">Adicionar novo</button>
+      <a class="users_header_btn" href="./add_novo.html"> Adicionar novo </a>
     </div>
 
     <div class="users_content">
@@ -39,7 +39,18 @@
         <div class="users_content_profiles_info">
           <div class="username_container">
             <h1 id="user_name">Abdeer</h1>
-            <i class="material-icons md-36">keyboard_arrow_right</i>
+            <form id="github_mail" method="get" action="./repositorios.html">
+              <input id="usr_mail"
+                  type="text"
+                  name="github_login" style="display: none;"></input>
+              <button
+                type="submit"
+                class="user_view_btn"
+              >
+                keyboard_arrow_right
+              </button>
+              
+            </form>
           </div>
           <a
             id="user_link"

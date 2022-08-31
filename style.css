@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&family=Roboto&display=swap');
-
+body{
+  background: #E5E5E5;
+}
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +39,7 @@ body {
   justify-content: space-around;
   margin-top: 164px;
   margin-left: 86px;
-  margin-bottom: 64px;
+  margin-bottom: 42px;
   margin-right: 125px;
 }
 
@@ -103,7 +105,8 @@ body {
 }
 
 .content_main_user_txt {
-  width: 410px;
+  position: absolute;
+  width: 375px;
   height: 56px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -113,7 +116,7 @@ body {
   outline: none;
   box-sizing: border-box;
   border-radius: 4px;
-  margin-left: 45px;
+  margin-left: 10px;
 }
 
 .content_main_btn {
@@ -130,8 +133,11 @@ body {
 }
 
 .footer_cstm {
-  border-top: 0.4px solid #fff2e7;
-  justify-content: flex-start;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  top: 150px;
 }
 
 .footer_cstm a {
@@ -139,9 +145,6 @@ body {
   color: #7e7e7e;
   font-weight: 400;
   font-size: 16px;
-  padding: 42px;
-
-  height: 48px;
 }
 
 .content_sec {

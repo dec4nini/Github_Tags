@@ -2,13 +2,18 @@
 .material-icons.md-24 { font-size: 24px; margin: 4px;}
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
+body{
+  background: #E5E5E5;
+}
 a:link { text-decoration: none; }
 
 
-a:visited { text-decoration: none; }
+a:visited { text-decoration: none;
+color: #000000;}
 
 
-a:hover { text-decoration: none; }
+a:hover { text-decoration: none;
+color: #7E7E7E; }
 
 
 a:active { text-decoration: none; }
@@ -48,7 +53,7 @@ a:active { text-decoration: none; }
   justify-content: center;
 
   font-family: 'Mulish', sans-serif;
-  color: #ffffff;
+  color: #ffffff  !important;
   font-weight: 400;
   font-size: 20px;
 
@@ -129,6 +134,14 @@ a:active { text-decoration: none; }
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.user_view_btn{
+  cursor: pointer;
+  font-family: 'Material Icons';
+  font-size: 36px;
+  border: none;
+  background-color:#ffffff;
 }
 
 .users_content_profiles_info > h1{

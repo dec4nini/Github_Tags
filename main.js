@@ -17,9 +17,11 @@ function stick_header() {
     header.classList.remove('sticky')
   }
 }
-
+const queryString = window.location.search
+const urlParams = new URLSearchParams(queryString)
+const name_git = urlParams.get('github_login')
 const links_social_media = {
-  github: 'dec4nini'
+  github: name_git
 }
 
 function get_GitHub_Profil_Info() {
@@ -31,9 +33,12 @@ function get_GitHub_Profil_Info() {
       user_name.textContent = data.name
       user_link.href = data.html_url
       user_avatar.src = data.avatar_url
-      user_login.textContent = '@' + data.login
+      user_login.textContent = data.login
       user_company.textContent = data.company
       user_location.textContent = data.location
+
+      document.forms['github_mail']['github_login'].value =
+        data.login /* Evnvia login p input escondido p consulta do perfil na próxima página */
     })
   const url_stars = `https://api.github-star-counter.workers.dev/user/${links_social_media.github}`
   fetch(url_stars)
