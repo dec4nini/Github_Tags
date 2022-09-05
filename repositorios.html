@@ -6,6 +6,7 @@
     <title>Cadastro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style_repos.css" />
+    <link rel="stylesheet" href="style_modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +17,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="sticky_header">
@@ -84,11 +86,98 @@
         <h1>Destaques</h1>
         <div class="items">
           <i class="material-icons md-24">bookmarks</i>
-          <p id="user_company">Localização exemplo</p>
+          <p id="user_company">Destaque exemplo</p>
         </div>
       </div>
     </div>
     <footer class="gap"></footer>
+    <div class="repos_filter_container">
+      <div class="repos_filter">
+        <i class="material-icons md-24">search</i>
+        <input type="search" placeholder="Buscar um repositório..." />
+      </div>
+      <div class="repos_filter">
+        <i class="material-icons md-24">filter_list</i>
+        <input type="search" placeholder="Buscar um repositório..." />
+      </div>
+    </div>
+    <div class="repos_section">
+      <div class="repos_block">
+        <div class="repos_container">
+          <h1 id="repos_name">repositorio_exemplo</h1>
+          <form id="repos_info" method="get" action="./repositorios.html">
+            <input id="repos_name"
+                type="text"
+                name="repos_name_srch" style="display: none;"></input>
+            <button
+              type="submit"
+              class="repos_view_btn"
+            >
+              keyboard_arrow_right
+            </button>
+            
+          </form>
+        </div>
+        <div class="repos_descr">Repositório criado apenas como exemplo para visualização.</div>
+        <div class="add_tags_btn">Adicionar tags
+          <i class="material-icons md-10">add</i>
+        </div>
+        <div class="star_btn">
+          <i class="material-icons md-24" >star</i>
+        </div>
+        <div class="company_location_star">
+          <i class="material-icons md-16">language</i>
+          <p id="user_company">
+            EX_emplo
+          </p>
+          <i class="material-icons md-16">access_time</i>
+          <p id="user_location">Atualizado a n dias atrás</p>
+          <i class="material-icons md-16">star</i>
+          <p id="user_stars">99</p>
+          <i class="material-icons md-16">supervisor_account</i>
+          <p id="user_stars">12</p>
+        </div>
+      </div>
+      <div class="repos_block">
+        <div class="repos_container">
+          <h1 id="repos_name">repositorio_exemplo</h1>
+          <form id="repos_info" method="get" action="./repositorios.html">
+            <input id="repos_name"
+                type="text"
+                name="repos_name_srch" style="display: none;"></input>
+            <button
+              type="submit"
+              class="repos_view_btn"
+            >
+              keyboard_arrow_right
+            </button>
+            
+          </form>
+        </div>
+        <div class="repos_descr">Repositório criado apenas como exemplo para visualização.</div>
+        <div class="tags">#TESTE</div>
+        <div class="tags">#TESte</div>
+        <div class="tags">#Teste</div>
+        <div class="add_tags_btn">Editar tags
+          <i class="material-icons md-10">edit</i>
+        </div>
+        <div class="star_btn">
+          <i class="material-icons md-24" >star</i>
+        </div>
+        <div class="company_location_star">
+          <i class="material-icons md-16">language</i>
+          <p id="user_company">
+            EX_emplo
+          </p>
+          <i class="material-icons md-16">access_time</i>
+          <p id="user_location">Atualizado a n dias atrás</p>
+          <i class="material-icons md-16">star</i>
+          <p id="user_stars">99</p>
+          <i class="material-icons md-16">supervisor_account</i>
+          <p id="user_stars">12</p>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="main.js"></script>
 </html>

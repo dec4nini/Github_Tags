@@ -1,7 +1,11 @@
+.material-icons.md-10 { font-size: 10px; padding:6px 0px 0px 6px;color: #E5E5E5;}
+
 .material-icons.md-16 { font-size: 16px; padding:10px 0 0 10px;color: #E5E5E5;}
 .material-icons.md-24 { font-size: 24px; margin: 10px 10px 10px 0;}
 .material-icons.md-48 { font-size: 48px; }
 body{
+  display: flex;
+  flex-direction: row;
   position: relative;
   background: #E5E5E5;
   height: 100%;
@@ -38,6 +42,7 @@ a:active { text-decoration: none; }
   top: 0;
   left: 0;
   gap: 60%;
+  z-index: 1;
 }
 
 .logo {
@@ -298,11 +303,183 @@ color: #000000;
 
 /* Filtros e Repositórios */
 
-.repos_filters{
+.repos_filter_container{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 916px;
+  height: 40px;
+  top: 112px;
+  margin: 0 22px 0 56px;
+  justify-content:space-between;
+}
 
+.repos_container > h1{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.repos_filter{
+  position: relative;
+  align-items: center;
+  display: flex;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7E7E7E;
+  padding: 0 0 0 16px;
+  margin: 0 16px 0 0;
+  
+}
+.repos_filter > input {
+  width: 400px;
+  height: 19px;
+  border: none;
+  outline: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7E7E7E;
+  justify-content: center;
+}
+.repos_section{
+  position: absolute;
+  left: 438px;
+  top: 176px;
+  display: flex;
+  flex-direction: column;
 }
 
 .repos_block{
+  position: relative;
+  height: 172px;
+  width: 874px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;     
+  padding: 0 0 0 40px;
+  margin-top: 16px;
+}
+
+.repos_container{
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+
+.repos_view_btn{
+  cursor: pointer;
+  font-family: 'Material Icons';
+  font-size: 36px;
+  border: none;
+  background-color:#ffffff;
+}
+
+.repos_descr{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.company_location_star{
+  display: flex;
+  flex-direction: row;
+
+  width: 562px;
+  height: 16px;
+
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  
+  margin: 0px 0 0 0px;
+  
+  color: #7E7E7E;
+}
+
+.add_tags_btn{
+  display:inline-block;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  align-items: center;
+  padding: 3px 16px;
+  gap: 8px;
+  background: rgba(0, 23, 255, 0.08);
+  color: #0017FF;
+  border-radius: 100px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;     
+  margin-top: 16px;
+}
+
+.add_tags_btn > i{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #0017FF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #FFFFFF !important;
+}
+
+.edt_tags_btn{
+  display:inline-block;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  align-items: center;
+  padding: 3px 16px;
+  gap: 8px;
+  background: rgba(0, 23, 255, 0.08);
+  border-radius: 100px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.star_btn{
+  position: absolute;
+  
+  top: 32px;
+  left: 842px;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background: rgba(255, 199, 0, 0.16);
+}
+
+.star_btn > i{
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FFC700 !important;
+  margin:  4px !important;
 
 }
 
