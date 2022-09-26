@@ -36,15 +36,28 @@ function get_GitHub_Profil_Info() {
       user_login.textContent = data.login
       user_company.textContent = data.company
       user_location.textContent = data.location
-
-      document.forms['github_mail']['github_login'].value =
-        data.login /* Evnvia login p input escondido p consulta do perfil na próxima página */
+      usr_mail.value = data.login
+      user_followers.textContent = data.followers
+      user_follows.textContent = data.following
+      user_bio.textContent = data.bio
+      user_blog.textContent = data.blog
+      user_blog.href = data.blog
     })
+
+  document.forms['github_mail']['github_login'].value =
+    user_login.textContent /* Evnvia login p input escondido p consulta do perfil na próxima página */
   const url_stars = `https://api.github-star-counter.workers.dev/user/${links_social_media.github}`
   fetch(url_stars)
     .then(response => response.json())
     .then(data => {
       user_stars.textContent = data.stars
+    })
+
+  const url_fav = `https://api.github.com/users/${links_social_media.github}/starred`
+  fetch(url_fav)
+    .then(response => response.json())
+    .then(data => {
+      user_fav.textContent = Object.keys(data).length
     })
 }
 

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width-device-width, initial-scale=1.0" /> -->
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
     <title>Cadastro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style_repos.css" />
@@ -17,10 +20,13 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="sticky_header">
+    <div class="sticky_header" id="header">
       <img class="logo" src="images/logoGithub.svg" />
     </div>
     <div class="profile_container">
@@ -34,35 +40,34 @@
           src="https://images.unsplash.com/photo-1660745752354-e864468aeed2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2MTUxNjU0MQ&ixlib=rb-1.2.1&q=80&w=1080"
           alt="Foto Pessoal"
         />
-        <h1>Rick Bone Junior</h1>
+        <h1 id="user_name">Rick Bone Junior</h1>
         <a
           id="user_link"
           href="https://www.github.com/dec4nini/"
           target="_blank"
         >
-          <img src="images/github.svg" alt="" /><span id="user_login"
-            >@teste</span
-          >
+          <span>@</span>
+          <span id="user_login">@teste</span>
         </a>
         <div class="profile_info_followers">
           <p1 class="seguid_fav">
             Seguidores
-            <strong>99</strong>
+            <strong id="user_followers">99</strong>
           </p1>
           <p1 class="seguid_fav">
             Seguindo
-            <strong>99</strong>
+            <strong id="user_follows">99</strong>
           </p1>
           <p1 class="seguid_fav">
             Favoritos
-            <strong>99</strong>
+            <strong id="user_fav">99</strong>
           </p1>
         </div>
       </div>
       <div class="profile_info_about">
         <h1>Sobre</h1>
         <div class="profile_info_about_descr">
-          <p>
+          <p id="user_bio">
             Analista e Desenvolvedor de sistemas com conhecimentos básicos em
             css e Html e experiência registrada.
           </p>
@@ -74,11 +79,11 @@
           </div>
           <div class="items">
             <i class="material-icons md-24">place</i>
-            <p id="user_company">Localização exemplo</p>
+            <p id="user_location">Localização exemplo</p>
           </div>
           <div class="items">
             <i class="material-icons md-24">link</i>
-            <a id="user_company" href="google.com"> google.com </a>
+            <a id="user_blog" href="google.com"> google.com </a>
           </div>
         </div>
       </div>
@@ -86,7 +91,7 @@
         <h1>Destaques</h1>
         <div class="items">
           <i class="material-icons md-24">bookmarks</i>
-          <p id="user_company">Destaque exemplo</p>
+          <p id="user_compsdany">Destaque exemplo</p>
         </div>
       </div>
     </div>
@@ -101,83 +106,7 @@
         <input type="search" placeholder="Buscar um repositório..." />
       </div>
     </div>
-    <div class="repos_section">
-      <div class="repos_block">
-        <div class="repos_container">
-          <h1 id="repos_name">repositorio_exemplo</h1>
-          <form id="repos_info" method="get" action="./repositorios.html">
-            <input id="repos_name"
-                type="text"
-                name="repos_name_srch" style="display: none;"></input>
-            <button
-              type="submit"
-              class="repos_view_btn"
-            >
-              keyboard_arrow_right
-            </button>
-            
-          </form>
-        </div>
-        <div class="repos_descr">Repositório criado apenas como exemplo para visualização.</div>
-        <div class="add_tags_btn">Adicionar tags
-          <i class="material-icons md-10">add</i>
-        </div>
-        <div class="star_btn">
-          <i class="material-icons md-24" >star</i>
-        </div>
-        <div class="company_location_star">
-          <i class="material-icons md-16">language</i>
-          <p id="user_company">
-            EX_emplo
-          </p>
-          <i class="material-icons md-16">access_time</i>
-          <p id="user_location">Atualizado a n dias atrás</p>
-          <i class="material-icons md-16">star</i>
-          <p id="user_stars">99</p>
-          <i class="material-icons md-16">supervisor_account</i>
-          <p id="user_stars">12</p>
-        </div>
-      </div>
-      <div class="repos_block">
-        <div class="repos_container">
-          <h1 id="repos_name">repositorio_exemplo</h1>
-          <form id="repos_info" method="get" action="./repositorios.html">
-            <input id="repos_name"
-                type="text"
-                name="repos_name_srch" style="display: none;"></input>
-            <button
-              type="submit"
-              class="repos_view_btn"
-            >
-              keyboard_arrow_right
-            </button>
-            
-          </form>
-        </div>
-        <div class="repos_descr">Repositório criado apenas como exemplo para visualização.</div>
-        <div class="tags">#TESTE</div>
-        <div class="tags">#TESte</div>
-        <div class="tags">#Teste</div>
-        <div class="add_tags_btn">Editar tags
-          <i class="material-icons md-10">edit</i>
-        </div>
-        <div class="star_btn">
-          <i class="material-icons md-24" >star</i>
-        </div>
-        <div class="company_location_star">
-          <i class="material-icons md-16">language</i>
-          <p id="user_company">
-            EX_emplo
-          </p>
-          <i class="material-icons md-16">access_time</i>
-          <p id="user_location">Atualizado a n dias atrás</p>
-          <i class="material-icons md-16">star</i>
-          <p id="user_stars">99</p>
-          <i class="material-icons md-16">supervisor_account</i>
-          <p id="user_stars">12</p>
-        </div>
-      </div>
-    </div>
+    <div id="repos_section" class="repos_section"></div>
   </body>
-  <script src="main.js"></script>
+  <script src="repositorios.js"></script>
 </html>
